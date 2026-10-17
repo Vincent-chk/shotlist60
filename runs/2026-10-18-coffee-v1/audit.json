@@ -1,0 +1,225 @@
+{
+  "passed": true,
+  "fails": 0,
+  "warns": 0,
+  "findings": [
+    {
+      "check": "schema",
+      "level": "PASS",
+      "message": "字段齐全，8 个镜头",
+      "details": {}
+    },
+    {
+      "check": "duration",
+      "level": "PASS",
+      "message": "秒数合计 60 = total_seconds 60，单镜均在区间内",
+      "details": {
+        "sum": 60
+      }
+    },
+    {
+      "check": "speed",
+      "level": "PASS",
+      "message": "全片 289 字 / 60 秒，平均 4.8 字/秒（理想 4-5）",
+      "details": {
+        "rows": [
+          {
+            "no": 1,
+            "seconds": 5,
+            "chars": 25,
+            "cps": 5.0,
+            "level": "PASS"
+          },
+          {
+            "no": 2,
+            "seconds": 9,
+            "chars": 45,
+            "cps": 5.0,
+            "level": "PASS"
+          },
+          {
+            "no": 3,
+            "seconds": 7,
+            "chars": 31,
+            "cps": 4.43,
+            "level": "PASS"
+          },
+          {
+            "no": 4,
+            "seconds": 8,
+            "chars": 37,
+            "cps": 4.62,
+            "level": "PASS"
+          },
+          {
+            "no": 5,
+            "seconds": 8,
+            "chars": 37,
+            "cps": 4.62,
+            "level": "PASS"
+          },
+          {
+            "no": 6,
+            "seconds": 10,
+            "chars": 49,
+            "cps": 4.9,
+            "level": "PASS"
+          },
+          {
+            "no": 7,
+            "seconds": 7,
+            "chars": 35,
+            "cps": 5.0,
+            "level": "PASS"
+          },
+          {
+            "no": 8,
+            "seconds": 6,
+            "chars": 30,
+            "cps": 5.0,
+            "level": "PASS"
+          }
+        ],
+        "avg_cps": 4.82
+      }
+    },
+    {
+      "check": "hook",
+      "level": "PASS",
+      "message": "钩子 17 字，3 秒内念得完",
+      "details": {}
+    },
+    {
+      "check": "numbers",
+      "level": "PASS",
+      "message": "口播出现 15 处数字，全部能在原稿找到（去重后 15 个）",
+      "details": {
+        "matched": [
+          "6",
+          "400",
+          "4",
+          "150",
+          "300",
+          "45",
+          "30",
+          "60",
+          "5",
+          "3",
+          "9",
+          "1",
+          "11",
+          "15",
+          "2"
+        ],
+        "missing": [],
+        "source_numbers": [
+          "1",
+          "11",
+          "15",
+          "150",
+          "2",
+          "2013",
+          "3",
+          "30",
+          "300",
+          "350",
+          "4",
+          "400",
+          "45",
+          "5",
+          "6",
+          "60",
+          "9"
+        ]
+      }
+    },
+    {
+      "check": "cn_numerals",
+      "level": "PASS",
+      "message": "没有中文数字，数字溯源覆盖完整",
+      "details": {}
+    },
+    {
+      "check": "datapoints",
+      "level": "PASS",
+      "message": "保留原稿数据 15 个：6、400、4、150、300、45、30、60、5、3、9、1、11、15、2",
+      "details": {
+        "matched": [
+          "6",
+          "400",
+          "4",
+          "150",
+          "300",
+          "45",
+          "30",
+          "60",
+          "5",
+          "3",
+          "9",
+          "1",
+          "11",
+          "15",
+          "2"
+        ]
+      }
+    }
+  ],
+  "speed_rows": [
+    {
+      "no": 1,
+      "seconds": 5,
+      "chars": 25,
+      "cps": 5.0,
+      "level": "PASS"
+    },
+    {
+      "no": 2,
+      "seconds": 9,
+      "chars": 45,
+      "cps": 5.0,
+      "level": "PASS"
+    },
+    {
+      "no": 3,
+      "seconds": 7,
+      "chars": 31,
+      "cps": 4.43,
+      "level": "PASS"
+    },
+    {
+      "no": 4,
+      "seconds": 8,
+      "chars": 37,
+      "cps": 4.62,
+      "level": "PASS"
+    },
+    {
+      "no": 5,
+      "seconds": 8,
+      "chars": 37,
+      "cps": 4.62,
+      "level": "PASS"
+    },
+    {
+      "no": 6,
+      "seconds": 10,
+      "chars": 49,
+      "cps": 4.9,
+      "level": "PASS"
+    },
+    {
+      "no": 7,
+      "seconds": 7,
+      "chars": 35,
+      "cps": 5.0,
+      "level": "PASS"
+    },
+    {
+      "no": 8,
+      "seconds": 6,
+      "chars": 30,
+      "cps": 5.0,
+      "level": "PASS"
+    }
+  ]
+}

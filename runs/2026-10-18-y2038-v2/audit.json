@@ -1,0 +1,277 @@
+{
+  "passed": true,
+  "fails": 0,
+  "warns": 1,
+  "findings": [
+    {
+      "check": "schema",
+      "level": "PASS",
+      "message": "字段齐全，10 个镜头",
+      "details": {}
+    },
+    {
+      "check": "duration",
+      "level": "PASS",
+      "message": "秒数合计 60 = total_seconds 60，单镜均在区间内",
+      "details": {
+        "sum": 60
+      }
+    },
+    {
+      "check": "speed",
+      "level": "WARN",
+      "message": "1 镜偏离理想语速：镜头 8 5.83 字/秒；全片 285 字 / 60 秒，平均 4.8 字/秒（理想 4-5）",
+      "details": {
+        "rows": [
+          {
+            "no": 1,
+            "seconds": 3,
+            "chars": 12,
+            "cps": 4.0,
+            "level": "PASS"
+          },
+          {
+            "no": 2,
+            "seconds": 6,
+            "chars": 30,
+            "cps": 5.0,
+            "level": "PASS"
+          },
+          {
+            "no": 3,
+            "seconds": 6,
+            "chars": 30,
+            "cps": 5.0,
+            "level": "PASS"
+          },
+          {
+            "no": 4,
+            "seconds": 8,
+            "chars": 37,
+            "cps": 4.62,
+            "level": "PASS"
+          },
+          {
+            "no": 5,
+            "seconds": 8,
+            "chars": 35,
+            "cps": 4.38,
+            "level": "PASS"
+          },
+          {
+            "no": 6,
+            "seconds": 6,
+            "chars": 28,
+            "cps": 4.67,
+            "level": "PASS"
+          },
+          {
+            "no": 7,
+            "seconds": 4,
+            "chars": 21,
+            "cps": 5.25,
+            "level": "PASS"
+          },
+          {
+            "no": 8,
+            "seconds": 6,
+            "chars": 35,
+            "cps": 5.83,
+            "level": "WARN"
+          },
+          {
+            "no": 9,
+            "seconds": 7,
+            "chars": 30,
+            "cps": 4.29,
+            "level": "PASS"
+          },
+          {
+            "no": 10,
+            "seconds": 6,
+            "chars": 27,
+            "cps": 4.5,
+            "level": "PASS"
+          }
+        ],
+        "avg_cps": 4.75
+      }
+    },
+    {
+      "check": "hook",
+      "level": "PASS",
+      "message": "钩子 12 字，3 秒内念得完",
+      "details": {}
+    },
+    {
+      "check": "numbers",
+      "level": "PASS",
+      "message": "口播出现 22 处数字，全部能在原稿找到（去重后 22 个）",
+      "details": {
+        "matched": [
+          "2038",
+          "2000",
+          "1900",
+          "1970",
+          "1",
+          "0",
+          "32",
+          "2147483647",
+          "68",
+          "19",
+          "3",
+          "14",
+          "7",
+          "1901",
+          "12",
+          "13",
+          "11",
+          "10",
+          "20",
+          "64",
+          "2920",
+          "5.6"
+        ],
+        "missing": [],
+        "source_numbers": [
+          "0",
+          "1",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "19",
+          "1900",
+          "1901",
+          "1970",
+          "2",
+          "20",
+          "2000",
+          "2020",
+          "2038",
+          "2147483647",
+          "2147483648",
+          "2920",
+          "3",
+          "32",
+          "5.6",
+          "63",
+          "64",
+          "68",
+          "7",
+          "99"
+        ]
+      }
+    },
+    {
+      "check": "cn_numerals",
+      "level": "PASS",
+      "message": "没有中文数字，数字溯源覆盖完整",
+      "details": {}
+    },
+    {
+      "check": "datapoints",
+      "level": "PASS",
+      "message": "保留原稿数据 22 个：2038、2000、1900、1970、1、0、32、2147483647、68、19、3、14、7、1901、12、13、11、10、20、64、2920、5.6",
+      "details": {
+        "matched": [
+          "2038",
+          "2000",
+          "1900",
+          "1970",
+          "1",
+          "0",
+          "32",
+          "2147483647",
+          "68",
+          "19",
+          "3",
+          "14",
+          "7",
+          "1901",
+          "12",
+          "13",
+          "11",
+          "10",
+          "20",
+          "64",
+          "2920",
+          "5.6"
+        ]
+      }
+    }
+  ],
+  "speed_rows": [
+    {
+      "no": 1,
+      "seconds": 3,
+      "chars": 12,
+      "cps": 4.0,
+      "level": "PASS"
+    },
+    {
+      "no": 2,
+      "seconds": 6,
+      "chars": 30,
+      "cps": 5.0,
+      "level": "PASS"
+    },
+    {
+      "no": 3,
+      "seconds": 6,
+      "chars": 30,
+      "cps": 5.0,
+      "level": "PASS"
+    },
+    {
+      "no": 4,
+      "seconds": 8,
+      "chars": 37,
+      "cps": 4.62,
+      "level": "PASS"
+    },
+    {
+      "no": 5,
+      "seconds": 8,
+      "chars": 35,
+      "cps": 4.38,
+      "level": "PASS"
+    },
+    {
+      "no": 6,
+      "seconds": 6,
+      "chars": 28,
+      "cps": 4.67,
+      "level": "PASS"
+    },
+    {
+      "no": 7,
+      "seconds": 4,
+      "chars": 21,
+      "cps": 5.25,
+      "level": "PASS"
+    },
+    {
+      "no": 8,
+      "seconds": 6,
+      "chars": 35,
+      "cps": 5.83,
+      "level": "WARN"
+    },
+    {
+      "no": 9,
+      "seconds": 7,
+      "chars": 30,
+      "cps": 4.29,
+      "level": "PASS"
+    },
+    {
+      "no": 10,
+      "seconds": 6,
+      "chars": 27,
+      "cps": 4.5,
+      "level": "PASS"
+    }
+  ]
+}

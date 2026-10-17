@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-10-18T02:22:03+08:00",
+  "prompt": "prompts/v1.md",
+  "source": "sources/coffee.md",
+  "mode": "from-response",
+  "response_file": "attempt1_response.txt",
+  "model": null
+}
